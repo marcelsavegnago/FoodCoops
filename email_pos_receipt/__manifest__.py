@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
 # Copyright (C) 2016-Today: La Louve (<http://www.lalouve.fr/>)
+# Copyright (C) 2019-Today: Druidoo (<https://www.druidoo.io>)
 # @author: La Louve
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html
 
@@ -10,6 +10,8 @@
     'description': """
         Send Receipt By Email
     """,
+    'author': 'Druidoo',
+   'website': 'https://www.druidoo.io',
 
     'license': 'AGPL-3',
     'depends': [
@@ -22,10 +24,11 @@
         'data/ir_cron_data.xml',
 
         # view
-        'views/view_pos_config_settings.xml',
+        'views/view_res_config_settings.xml',
         'views/view_res_partner.xml',
 
         # templates
         'static/src/xml/templates.xml',
     ],
+    'installable': True,
 }
