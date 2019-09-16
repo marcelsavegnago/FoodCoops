@@ -5,29 +5,25 @@
 
 {
     'name': 'POS Receipt By Email',
-    'version': '9.0.1.0.11',
+    'version': '12.0.1.0.0',
     'category': 'Custom',
     'description': """
         Send Receipt By Email
     """,
     'author': 'Druidoo',
-   'website': 'https://www.druidoo.io',
-
+    'website': 'https://www.druidoo.io',
     'license': 'AGPL-3',
     'depends': [
         'point_of_sale',
     ],
     'data': [
         'security/ir.model.access.csv',
-        # datas
+        'views/report_paperformat.xml',
+        'views/view_pos_config_settings.xml',
         'data/email_template_data.xml',
         'data/ir_cron_data.xml',
-
-        # view
-        'views/view_res_config_settings.xml',
         'views/view_res_partner.xml',
-
-        # templates
+        'views/report_receipt.xml',
         'static/src/xml/templates.xml',
     ],
     'installable': True,
